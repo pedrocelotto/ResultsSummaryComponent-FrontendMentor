@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+section {
+  width: 50%;
+  background: linear-gradient(to bottom, #7856ff, #2d2ae8);
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+section h1 {
+  font-size: 16px;
+  color: hsl(241, 100%, 89%);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.grade {
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 120px;
+  height: 120px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grade span {
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+}
+
+.grade p {
+  color: hsl(241, 100%, 89%);
+  font-size: 12px;
+}
+
+section .rating {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin: 20px 0;
+}
+
+section p {
+  font-size: 13px;
+  color: hsl(241, 100%, 89%);
+}
+
+.summary {
+  width: 50%;
+  padding: 30px;
+}
+
+.summary h1 {
+  font-size: 16px;
+  color: hsl(224, 30%, 27%);
+}
+
+.summary div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 15px 0;
+  padding: 10px;
+  align-items: center;
+}
+
+.summary div span {
+  display: flex;
+  align-items: center;
+  text-decoration: bold;
+  font-weight: 800;
+}
+
+span img {
+  margin-right: 5px;
+  width: 15px;
+}
+
+.summary a {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  background: hsl(224, 30%, 27%);
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.reaction {
+  background-color: hsl(0, 100%, 67%, 0.1);
+  border-radius: 6px;
+}
+
+.reaction span {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.1);
+  border-radius: 6px;
+}
+
+.memory span {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.1);
+  border-radius: 6px;
+}
+
+.verbal span {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  border-radius: 6px;
+}
+
+.visual span {
+  color: hsl(234, 85%, 45%);
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+    height: 100vh;
+    display: block;
+  }
+
+  section {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .summary {
+    width: 100%;
+  }
+}
